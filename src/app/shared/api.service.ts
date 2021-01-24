@@ -15,4 +15,8 @@ export class ApiService{
     getAllMovies(): Observable<Movies>{
         return this.http.get<Movies>(`${this.apiURL}popular?api_key=${Config.apiKey}`);
     }
+
+    searchMovie(query: string): Observable<Movies> {
+        return this.http.get<Movies>(Config.search + query);
+    }
 }

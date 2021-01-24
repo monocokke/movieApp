@@ -1,5 +1,12 @@
 <section class="content" role="main">
-    <div class="container">
+  <mat-form-field appearance="outline" class="search-box">
+    <mat-label>Search for a movie</mat-label>
+    <input matInput class="form-control" [ngModel]="searchQuery"
+      (ngModelChange)="searchQuery = $event ; searchMovie($event)" placeholder="Enter movie name...">
+    <mat-icon matSuffix>youtube_searched_for</mat-icon>
+  </mat-form-field> 
+  
+  <div class="container">
         <mat-card *ngFor="let movie of Movies.results" style="padding: 0; height: 280px" routerLink="/movie-details/{{movie.id}}">
           <mat-grid-list cols="5" rowHeight="280px" class="fade-in">
             <mat-grid-tile colspan="2">
@@ -32,12 +39,12 @@
             </mat-grid-tile>
           </mat-grid-list>
         </mat-card>
-        <!--<mat-card *ngIf="noResult">
+        <mat-card *ngIf="noResult">
           <mat-card-content>
             <mat-card-header>
               <h2>No movies found...</h2>
             </mat-card-header>
           </mat-card-content>
-        </mat-card>-->
+        </mat-card>
       </div>
 </section>
