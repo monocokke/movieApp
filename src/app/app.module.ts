@@ -17,11 +17,13 @@ import { MatDialogModule } from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListComponent
+    ListComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,

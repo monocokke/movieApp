@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Config } from './config';
 import { Movies } from './models/movies';
+import { Details } from './models/details';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -18,5 +19,9 @@ export class ApiService{
 
     searchMovie(query: string): Observable<Movies> {
         return this.http.get<Movies>(Config.search + query);
+    }
+
+    getMovieDetails(id: number): Observable<Details> {
+        return this.http.get<Details>(`${this.apiURL}${id}?api_key=${Config.apiKey}`);
     }
 }
