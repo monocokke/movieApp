@@ -27,7 +27,7 @@
                   <mat-card-title>
                     <a mat-button routerLink="/movie-details/{{movie.id}}" class="movie-title">{{movie.title}}</a>
                   </mat-card-title>
-                  <mat-card-subtitle><i>{{movie.release_date}}</i></mat-card-subtitle>
+                  <mat-card-subtitle><i>{{movie.release_date | dateFormat}}</i></mat-card-subtitle>
                 </mat-card-header>
                 <div class="description">
                   {{movie.overview}}

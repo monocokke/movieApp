@@ -13,7 +13,7 @@
                 <mat-card-content class="details-info">
                   <mat-card-title>
                     <h2 class="movie-title">{{MovieDetails.original_title}}
-                      <span class="release-date">({{MovieDetails.release_date}})</span>
+                      <span class="release-date">({{MovieDetails.release_date | dateFormat:'YYYY'}})</span>
                     </h2>
                   </mat-card-title>
                   <mat-card-title>
@@ -82,7 +82,7 @@
                       <p>Original Language</p>
                     </li>
                     <li class="profile">
-                      <p class="character">{{MovieDetails.runtime}}</p>
+                      <p class="character">{{MovieDetails.runtime  | dateFormat :'runtime'}}</p>
                       <p>Runtime</p>
                     </li>
                     <li class="profile">

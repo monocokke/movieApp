@@ -20,6 +20,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DetailsComponent } from './details/details.component';
 import { HeaderComponent } from './header/header.component';
 import { TrailerComponent } from './trailer/trailer.component';
+import { DateFormatPipe } from './shared/date-format.pipe';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { TrailerComponent } from './trailer/trailer.component';
     ListComponent,
     DetailsComponent,
     HeaderComponent,
-    TrailerComponent
+    TrailerComponent,
+    DateFormatPipe
   ],
   imports: [
     BrowserModule,
