@@ -18,12 +18,14 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DetailsComponent } from './details/details.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListComponent,
-    DetailsComponent
+    DetailsComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
