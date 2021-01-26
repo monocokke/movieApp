@@ -19,13 +19,15 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DetailsComponent } from './details/details.component';
 import { HeaderComponent } from './header/header.component';
+import { TrailerComponent } from './trailer/trailer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListComponent,
     DetailsComponent,
-    HeaderComponent
+    HeaderComponent,
+    TrailerComponent
   ],
   imports: [
     BrowserModule,
