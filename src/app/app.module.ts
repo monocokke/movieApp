@@ -21,6 +21,7 @@ import { DetailsComponent } from './details/details.component';
 import { HeaderComponent } from './header/header.component';
 import { TrailerComponent } from './trailer/trailer.component';
 import { DateFormatPipe } from './shared/date-format.pipe';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { DateFormatPipe } from './shared/date-format.pipe';
     DetailsComponent,
     HeaderComponent,
     TrailerComponent,
-    DateFormatPipe
+    DateFormatPipe,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
